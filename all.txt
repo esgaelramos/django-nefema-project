@@ -1,0 +1,137 @@
+NEFEMA 
+WEB PORTFOLIO
+---
+LANGUAGES
+Django
+Django Rest Framewrok
+HTML | CSS 
+VueJS
+JavaScript
+PostgreSQL
+---
+PROJECT - APPS
++ahello
++ahypotenuse
++agpassword
+aportfolio
+auniversity
+amail
+asignatures
+---
+PSQL
+sudo -u postgres psql
+CREATE DATABASE nefema;
+---
+TEST 1
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver
+---
+//////////////////////////////////////////////////////////////////////
+AHELLO
+python3 manage.py startapp ahello
++STEP TO STEP
+REGISTER APP
+    'ahello',
+-
+CREATE VIEW
+def home(request):
+    return render(request, 'home.html')
+-
+CREATE DIR 'templates'
+-
+CREATE HTML
+-
+ADD APP-URLS
+from django.urls import path
+
+from ahello import views
+
+app_name='ahello'
+
+urlpatterns = [
+    path('', views.home, name='home'),
+]
+-
+INCLUDE URLS
+    path('', include('ahello.urls', namespace='ahello')),
+-
+FINISH
+makemigrations
+migrate
+runserver
+---
+//////////////////////////////////////////////////////////////////////
+AHYPOTENUSE
+python3 manage.py startapp ahypotenuse
++STEP TO STEP
+REGISTER APP
+    'ahypotenuse',
+-
+CREATE VIEWS
+-
+CREATE DIR 'templates'
+-
+CREATE HTML
+-
+ADD APP-URLS
+from django.urls import path
+
+from ahypotenuse import views
+
+app_name='ahypotenuse'
+
+urlpatterns = [
+
+]
+-
+INCLUDE URLS
+    path('', include('ahypotenuse.urls', namespace='ahypotenuse')),
+-
+FINISH
+makemigrations
+migrate
+runserver
+---
+//////////////////////////////////////////////////////////////////////
+AGPASSWORD
+python3 manage.py startapp agpassword
++STEP TO STEP
+REGISTER APP
+    'agpassword',
+-
+CREATE VIEWS
+-
+CREATE DIR 'templates'
+-
+CREATE HTML
+-
+ADD APP-URLS
+from django.urls import path
+
+from agpassword import views
+
+app_name='agpassword'
+
+urlpatterns = [
+
+]
+-
+INCLUDE URLS
+    path('', include('agpassword.urls', namespace='agpassword')),
+-
+FINISH
+makemigrations
+migrate
+runserver
+---
+//////////////////////////////////////////////////////////////////////
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////

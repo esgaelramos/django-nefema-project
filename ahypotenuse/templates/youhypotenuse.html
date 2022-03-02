@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    You Hypotenuse | NEFEMA
+{% endblock %}
+
+{% block content %}
+
+    <h1>You Hipotenusa</h1>
+    <h2>{{hipotenusa}}</h2>
+
+    <br>
+    <h2>Procedimiento:</h2>
+    <p>
+        First we remeber the formule: a**2 + b**2 = c**2.
+        <br><br>
+        Then we detected the a and b, they are our catetos <br>
+        CATETO A = {{catetoa}}, CATETO B = {{catetob}}
+        <br><br>
+        Now sustituir the values: <br>
+        {{catetoa}}**2 + {{catetob}}**2 = c**2.
+        <br><br>
+        And do it the squares: <br>
+        {{catetoA}} + {{catetoB}} = c**2
+        <br><br>
+        After we despejamos C <br>
+        ({{catetoS}})**0.5 = c
+        <br><br>
+        And ready, our HIPOTENUSA value: {{hipotenusa}} 
+    </p>
+{% endblock %}

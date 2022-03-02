@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Hypotenuse | NEFEMA
+{% endblock %}
+
+{% block content %}
+    <h1>Hypotenuse</h1>
+    <form action="{% url 'ahypotenuse:youhypotenuse' %}">            
+        <label for="catetoa">Cateto A</label>
+        <input type="text" name="catetoa" id="catetoa">
+    
+        <label for="catetob">Cateto B</label>
+        <input type="text" name="catetob" id="catetob">
+            
+        <br>
+    
+        <button>Generate Hipotenusa</button>
+    </form>
+{% endblock %} 
