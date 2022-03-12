@@ -160,8 +160,77 @@ main{
 }
 
 /* **************************************************
-    TRIANGULE
+    HYPOTENUSE
 ************************************************* **/
+.container-hypotenuse{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* .triangule-container{
+} */
+#triangule{
+    width: 0;
+    height: 0;
+    border: 17vh solid var(--extralight-color);
+    border-right: 17vh solid transparent;
+    border-top: 17vh solid transparent;
+    margin: auto;
+    border-radius: 3px;
+}
+#catetoa{
+    border-color: var(--highlight-color);
+    background-color: transparent;
+    width: 50px;
+    border-radius: 2px;
+}
+#catetob{
+    border-color: var(--highlight-color);
+    background-color: transparent;
+    width: 50px;
+    border-radius: 2px;
+}
+
+
+
+
+.btn-container-hypotenuse{
+    text-align: center;
+}
+.btn-hypotenuse{
+  display: flexbox;
+  border-color: var(--primary-color);
+  color: var(--body-color);
+  background-image: -webkit-linear-gradient(45deg, var(--primary-color) 50%, var(--header-color) 50%);
+  background-image: linear-gradient(45deg, var(--primary-color) 50%, var(--header-color) 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  border-radius: 3px;
+  padding: 4px 7px;
+}
+.btn-hypotenuse:hover {
+  background-position: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* **************************************************
@@ -282,7 +351,20 @@ footer{
 
 /* --- 500PX --- */
 @media (max-width: 500px){
-    /* --- H --- */    
+    /* --- TRIANGULE --- */
+    .container-hypotenuse{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .catetos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .btn-container-hypotenuse{
+        grid-row-start: 1;
+        grid-row-start: 4;
+
+    }
 }
 
 /* **************************************************

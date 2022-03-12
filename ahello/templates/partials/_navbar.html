@@ -7,16 +7,16 @@
                 <a href="#"><span>NEFEMA</span></a>
             </div>
             <!-- --- MENU MOBILE --- -->                    
-            <div class="header-menu">
+            <div class="header-menu" id="appMain">
                 <div id="navbar-button">
                     <!-- --- BOTTON HAMBURGER --- -->                    
-                    <button class="open" onclick="showMenuMobile();">                        
+                    <button class="" @click="show_menu_mobile = !show_menu_mobile">                        
                         <span class="top-line"></span>
                         <span class="mid-line"></span>
                         <span class="bottom-line"></span>
                     </button>
                     <!-- --- MENU OPTIONS --- -->                    
-                    <div id="menu-mobile-options">
+                    <div id="menu-mobile-options" v-show="show_menu_mobile">
                         <li class="option-item"><strong><a href="">INICIO</a></strong></li>
                         <li class="option-item"><strong><a href="">PLANES</a></strong></li>
                         <li class="option-item"><strong><a href="">PLANTILLAS</a></strong></li>

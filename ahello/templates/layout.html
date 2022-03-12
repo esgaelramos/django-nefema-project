@@ -23,6 +23,7 @@
         {% block content %}
         {% endblock %}
         
+        <br><br><br><br>
         {% comment %} --- INDEX INCLUDE ---- {% endcomment %}
         {% include 'partials/_index.html' %}
     </main>
@@ -32,5 +33,6 @@
     
     {% comment %} --- JAVASCRIPT ---- {% endcomment %}
     <script src="{% static 'js/vue.js' %}"></script>
+    <script src="../../media/main.js"></script>
 </body>
 </html>

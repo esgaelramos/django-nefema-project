@@ -13,8 +13,8 @@ def youhypotenuse(request):
         catetoc = (catetoa + catetob) ** 0.5
         return round(catetoc, 2)
     
-    catetoa = int(request.GET.get('catetoa'))
-    catetob = int(request.GET.get('catetob'))
+    catetoa = float(request.GET.get('catetoa'))
+    catetob = float(request.GET.get('catetob'))
     catetoA2 = catetoa**2
     catetoB2 = catetob**2 
     cateto_suma = catetoB2 + catetoA2

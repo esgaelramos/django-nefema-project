@@ -7,14 +7,27 @@
 {% block content %}
     <h1>Hypotenuse</h1>
     <form action="{% url 'ahypotenuse:youhypotenuse' %}">            
-        <label for="catetoa">Cateto A</label>
-        <input type="text" name="catetoa" id="catetoa">
-    
-        <label for="catetob">Cateto B</label>
-        <input type="text" name="catetob" id="catetob">
-            
-        <br>
-    
-        <button>Generate Hipotenusa</button>
+        <div class="container-hypotenuse">
+            <div class="triangule-container">
+                <div id="triangule"></div>
+            </div>
+            <div class="catetos">
+                <div class="catetoa">
+                    <div class="catetoa-triangule-value"></div>   
+                    <label for="catetoa">Cateto A</label>
+                    <input type="number" step="any" name="catetoa" id="catetoa" required>
+                </div>
+                <div class="catetob">
+                    <div class="catetob-triangule-value"></div>   
+                    <label for="catetob">Cateto B</label>
+                    <input type="number" step="any" name="catetob" id="catetob" required>
+                </div>
+                <div class="btn-container-hypotenuse">
+                    <button class="btn-hypotenuse"><b>Generate Hipotenusa</b></button>
+                </div>
+            </div>
+
+        </div>
     </form>
+
 {% endblock %} 
