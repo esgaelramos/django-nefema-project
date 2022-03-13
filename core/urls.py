@@ -18,6 +18,8 @@ urlpatterns = [
 
     path('', include('amailcontact.urls', namespace='amailcontact')),
 
+    path('api/', include('apihelloview.urls', namespace='apihelloview')),
+
     # path('api-auth/', include('rest_framework.urls'))
 ]
 

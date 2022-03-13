@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'agpassword',
     'acourses',
     'amailcontact',
+    'apihelloview',
 
     'rest_framework',
     'rest_framework.authtoken',
