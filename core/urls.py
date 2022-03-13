@@ -20,6 +20,8 @@ urlpatterns = [
 
     path('api/', include('apihelloview.urls', namespace='apihelloview')),
 
+    path('api/', include('apiblogview.urls', namespace='apiblogview')),
+
     # path('api-auth/', include('rest_framework.urls'))
 ]
 

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'acourses',
     'amailcontact',
     'apihelloview',
+    'apiblogview',
 
     'rest_framework',
     'rest_framework.authtoken',
