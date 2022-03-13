@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'ahello',
     'ahypotenuse',
     'agpassword',
+    'acourses',
+    'amailcontact',
 
     'rest_framework',
     'rest_framework.authtoken',
@@ -166,3 +168,11 @@ REST_FRAMEWORK = {
 }
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+#POR DEFECTO ES: 587
+EMAIL_POST = 587
+EMAIL_HOST_USER = 'esnefema@gmail.com'
+EMAIL_HOST_PASSWORD = '*************'

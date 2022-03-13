@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Manager Courses | NEFEMA
+{% endblock %}
+
+{% block content %}
+
+<div class="ac_container">
+    <div class="add">
+        <h1>Gestión de Cursos</h1>
+        <div class="card">
+            <div class="card-body">
+                <form action="/registrarCurso/" method="POST">{% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" name="txtCode" class="form-control" placeholder="Código" minlength="6" maxlength="6" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Nombre" maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="numCredits" class="form-control" placeholder="Créditos" min="1" max="9" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="boton-registrar">Registrar Curso</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table">
+        <h1>Listado de Cursos</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Créditos</th>
+                    <th colspan="2" id="opciones" >Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for curso in cursos %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ curso.ac_code }}</td>
+                    <td id="table-nombre">{{ curso.ac_name }}</td>
+                    <td>{{ curso.ac_credits }}</td>
+                    <td><a href="editarCurso/{{ curso.ac_code }}" class="btn btn-info">Editar</a></td>
+                    <td><a href="eliminarCurso/{{ curso.ac_code }}" class="btn btn-danger btnEliminacion">Eliminar</a></td>
+                </tr>    
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %} 

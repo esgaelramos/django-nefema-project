@@ -14,6 +14,10 @@ urlpatterns = [
 
     path('', include('agpassword.urls', namespace='agpassword')),
 
+    path('', include('acourses.urls', namespace='acourses')),
+
+    path('', include('amailcontact.urls', namespace='amailcontact')),
+
     # path('api-auth/', include('rest_framework.urls'))
 ]
 

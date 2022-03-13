@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Contact | NEFEMA
+{% endblock %}
+
+{% block content %}
+
+<h1>Hablemos!</h1>
+<form action="/contact/" method="POST">{% csrf_token %}
+    <p>
+        Asunto: <input type="text" name="txtAsunto"> 
+    </p>
+    <p>
+        Email: <input type="text" name="txtEmail">
+    </p>
+    <p>
+        Mensaje: <textarea name="txtMensaje" id="" cols="30" rows="5" style="resize: none;"></textarea>
+    </p>
+    <input type="submit" value="Enviar Correo"/>
+</form>
+
+{% endblock %} 
