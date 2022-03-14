@@ -6,18 +6,20 @@
 
 {% block content %}
 
-<h1>Hablemos!</h1>
-<form action="/contact/" method="POST">{% csrf_token %}
+<h1>Contact me!</h1>
+<form action="/contact/" method="POST" class="contact-form">{% csrf_token %}
     <p>
-        Asunto: <input type="text" name="txtAsunto"> 
+        Asunto: <br><input type="text" name="txtAsunto" id="input-asunto"> 
     </p>
     <p>
-        Email: <input type="text" name="txtEmail">
+        Email: <br><input type="text" name="txtEmail" id="input-email">
     </p>
     <p>
-        Mensaje: <textarea name="txtMensaje" id="" cols="30" rows="5" style="resize: none;"></textarea>
+        Mensaje: <br><textarea name="txtMensaje" id="textarea-contact" cols="30" rows="5" style="resize: none;"></textarea>
     </p>
-    <input type="submit" value="Enviar Correo"/>
+    <div class="btn-contact">
+        <input type="submit" value="Send Mail"/ id="btn-send">
+    </div>
 </form>
 
 {% endblock %} 

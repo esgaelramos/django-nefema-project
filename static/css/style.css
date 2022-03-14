@@ -20,6 +20,7 @@ a{
 ul{
     list-style: none;
 }
+
 /* **************************************************
     HEADER CONTACT 
 ************************************************* **/
@@ -144,11 +145,109 @@ header{
     animation-name: bottom-line-animation-close;
 }
 /* **************************************************
-    A
+    WHY
 ************************************************* **/
+.why{
+    margin: 15px;
+}
+.why h2{
+    line-height: 0.3;
+}
+.why-items{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.why-exp{
+    width: 100%;
+    padding: 0 15px;
+}
+.why-img{
+    margin: auto;
+    width: 140px;
+}
+.why-img img{
+    margin: auto;
+    margin-bottom: -25px;
+    width: 140px;
+    justify-items: center;
+}
+.why-text{
+    text-align: center;
+}
+.why-text p strong{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* **************************************************
-    A
+    CONTACT
 ************************************************* **/
+.contact-form{
+    margin: 2em 0;
+}
+.contact-form input{
+    padding: 4px;
+}
+.contact-form textarea{
+    padding: 4px;
+}
+#input-asunto{
+    width: 400px;
+}
+#input-email{
+    width: 400px;
+}
+#textarea-contact{
+    width: 400px;
+
+}
+.btn-contact input{
+    margin: 0 155px;
+}
+.btn-send{
+    border-radius: 2px;
+}
+
+
+
 /* **************************************************
     A
 ************************************************* **/
@@ -365,8 +464,95 @@ footer{
         grid-row-start: 4;
 
     }
+    /* --- CONTACT --- */
+    #input-asunto{
+        width: 200px;
+    }
+    #input-email{
+        width: 200px;
+    
+    }
+    #textarea-contact{
+        width: 200px;
+    
+    }
+    .btn-contact input{
+        margin: 0 70px;
+    }
 }
 
 /* **************************************************
     END? 
 ************************************************* **/
+.why{
+    margin: 15px;
+}
+.why h2{
+    line-height: 0.3;
+}
+.why-items{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.why-exp{
+    width: 100%;
+    padding: 0 15px;
+}
+.why-img{
+    margin: auto;
+    width: 140px;
+}
+.why-img img{
+    margin: auto;
+    margin-bottom: -25px;
+    width: 140px;
+    justify-items: center;
+}
+.why-text{
+    text-align: center;
+}
+.why-text p strong{
+    font-size: 20px;
+}
+
+@media (min-width: 1450px){
+    /* --- WHY --- */
+    .why-exp{
+        width: 27%;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1449.9px){
+    /* --- WHY --- */
+    .why-exp{
+        width: 27%;
+    }
+}
+@media (min-width: 900px) and (max-width: 1279.9px){
+    /* --- WHY --- */
+    .why-exp{
+        width: 27%;
+    }
+
+}
+@media (min-width: 800px) and (max-width: 899.9px){
+    /* --- WHY --- */
+    .why-exp{
+        width: 40%;
+    }
+      
+
+}
+@media (min-width:700px) and (max-width: 799.9px){    
+    /* --- WHY --- */
+    .why-exp{
+        width: 43%;
+    }    
+
+}
+@media (min-width: 500px) and (max-width: 699.9px){ 
+    /* --- WHY --- */
+    .why-exp{
+        width: 40%;
+    }
+}
