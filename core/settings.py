@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apiblogview',
     'aportfolio',
     'anews',
+    'apicompanies',
 
     'rest_framework',
     'rest_framework.authtoken',
