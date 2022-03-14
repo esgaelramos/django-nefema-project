@@ -22,6 +22,10 @@ urlpatterns = [
 
     path('api/', include('apiblogview.urls', namespace='apiblogview')),
 
+    path('', include('aportfolio.urls', namespace='aportfolio')),
+
+    path('', include('anews.urls', namespace='anews')),
+
     # path('api-auth/', include('rest_framework.urls'))
 ]
 

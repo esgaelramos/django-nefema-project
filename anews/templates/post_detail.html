@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    News {{ post.title }} | NEFEMA
+{% endblock %}
+
+{% block content %}
+<h1>Post</h1>
+<span>La variable de este post es: {{ post }}</span>
+
+<h2>{{ post.title }}</h2>
+<span>{{ post.date }}</span>
+<p> {{ post.description|safe }}</p>
+{% comment %} <img src="{{ post.image.url }}" alt="{{ post.title }}"> {% endcomment %}
+
+{% endblock %} 

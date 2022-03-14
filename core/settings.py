@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'amailcontact',
     'apihelloview',
     'apiblogview',
+    'aportfolio',
+    'anews',
 
     'rest_framework',
     'rest_framework.authtoken',
