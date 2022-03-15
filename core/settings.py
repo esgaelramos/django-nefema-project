@@ -101,23 +101,16 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
 import dj_database_url
 from decouple import config
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': 'nefema',
-    #     'USER': 'postgres',
-    #     'PASSWORD': 'SEXYpsql!88',
-    #     'HOST': '127.0.0.1',
-    #     'DATABASE_PORT': '5432',     
-    # }
-    'default:': dj_database_url.config(
+    'default': dj_database_url.config(
         default=config('DATABASE_URL')
     )
-
 }
+
 
 
 # Password validation
@@ -154,10 +147,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     # BASE_DIR / "static",
     os.path.join(BASE_DIR, 'static'),
@@ -188,3 +180,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # EMAIL_POST = 587
 # EMAIL_HOST_USER = 'esnefema@gmail.com'
 # EMAIL_HOST_PASSWORD = '*************'
+
+
