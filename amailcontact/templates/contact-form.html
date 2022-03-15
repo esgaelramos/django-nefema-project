@@ -6,13 +6,13 @@
 
 {% block content %}
 
-<h1>Contact me!</h1>
+<h1>Contact you!</h1>
 <form action="/contact/" method="POST" class="contact-form">{% csrf_token %}
     <p>
         Asunto: <br><input type="text" name="txtAsunto" id="input-asunto"> 
     </p>
     <p>
-        Email: <br><input type="text" name="txtEmail" id="input-email">
+        Email to Send: <br><input type="text" name="txtEmail" id="input-email">
     </p>
     <p>
         Mensaje: <br><textarea name="txtMensaje" id="textarea-contact" cols="30" rows="5" style="resize: none;"></textarea>
