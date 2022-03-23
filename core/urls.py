@@ -26,8 +26,6 @@ urlpatterns = [
 
     path('', include('anews.urls', namespace='anews')),
 
-    path('', include('ascaner.urls', namespace='ascaner')),
-
     path('api/', include('apicompanies.urls', namespace='apicompanies')),
 
     # path('api-auth/', include('rest_framework.urls'))
