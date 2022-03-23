@@ -42,7 +42,6 @@ header{
     color: var(--extralight-color);
     font-weight: bold;
 }
-
 /* --- MENU STATUS --- */
 .header-menu{
     display: none;
@@ -92,11 +91,6 @@ header{
 .option-item-pc a:hover{
     color: var(--body-color);
 }
-
-
-
-
-
 /* --- HAMBURGER MENU --- */
 #header_navbar{
     position: fixed;
@@ -145,6 +139,12 @@ header{
     animation-name: bottom-line-animation-close;
 }
 /* **************************************************
+    MAIN
+************************************************* **/
+main{
+    margin: 1rem;
+}
+/* **************************************************
     WHY
 ************************************************* **/
 .why{
@@ -165,6 +165,8 @@ header{
 .why-img{
     margin: auto;
     width: 140px;
+    height: 140px;
+    outline: 1px solid var(--extralight-color);
 }
 .why-img img{
     margin: auto;
@@ -237,7 +239,6 @@ header{
 }
 #textarea-contact{
     width: 400px;
-
 }
 .btn-contact input{
     margin: 0 155px;
@@ -251,12 +252,8 @@ header{
 /* **************************************************
     A
 ************************************************* **/
-/* **************************************************
-    A
-************************************************* **/
-main{
-    margin: 1rem;
-}
+
+
 
 /* **************************************************
     HYPOTENUSE

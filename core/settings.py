@@ -15,7 +15,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2tlq9k4$)2--wk2#-if2#=#7r663g1a8^#v^1g3=4l9z%28aq-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
+DEBUG = True
+
 
 ALLOWED_HOSTS = ['*']
 
@@ -102,13 +104,23 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-import dj_database_url
-from decouple import config
+# import dj_database_url
+# from decouple import config
 
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=config('DATABASE_URL')
+#     )
+# }
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'nefema',
+        'USER': 'postgres',
+        'PASSWORD': 'SEXYpsql!88',
+        'HOST': '127.0.0.1',
+        'DATABASE_PORT': '5432',     
+    }
 }
 
 
