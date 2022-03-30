@@ -8,6 +8,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     
+    path('', include('pwa.urls')),
+
     path('', include('ahello.urls', namespace='ahello')),
 
     path('', include('ahypotenuse.urls', namespace='ahypotenuse')),
