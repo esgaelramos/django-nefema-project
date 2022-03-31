@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'anews',
     'apicompanies',
 
-    'pwa',
+
     
     'rest_framework',
     'rest_framework.authtoken',
@@ -165,14 +165,47 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    # BASE_DIR / "static",
-    os.path.join(BASE_DIR, 'static'),
+    BASE_DIR / "static",
+    # os.path.join(BASE_DIR, 'static'),
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 os.makedirs(STATIC_TMP, exist_ok=True)
 os.makedirs(STATIC_ROOT, exist_ok=True)
+
+#PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/js', 'serviceworker.js')
+#
+#PWA_APP_NAME = 'GIRA'
+#PWA_APP_DESCRIPTION = "GIRA PREPA PWA"
+#PWA_APP_THEME_COLOR = '#000000'
+#PWA_APP_BACKGROUND_COLOR = '#F4FBEE'
+#PWA_APP_DISPLAY = 'standalone'
+#PWA_APP_SCOPE = '/'
+#PWA_APP_ORIENTATION = 'any'
+#PWA_APP_START_URL = '/'
+#PWA_APP_STATUS_BAR_COLOR = 'default'
+#PWA_APP_ICONS = [
+#    {
+#        'src': '../media/images/logocv.png',
+#        'sizes': '160x160'
+#    }
+#]
+#PWA_APP_ICONS_APPLE = [
+#    {
+#        'src': '../media/images/logocv.png',
+#        'sizes': '160x160'
+#    }
+#]
+#PWA_APP_SPLASH_SCREEN = [
+#    {
+#        'src': '../media/images/logocv.png',
+#        'media': '(device-width: 320px) and(device-height: 568px) and(-webkit-device-pixel-ratio: 2)'
+#    }
+#]
+#PWA_APP_DIR = 'ltr'
+#PWA_APP_LANG = 'es-MX'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
