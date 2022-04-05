@@ -106,24 +106,24 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# import dj_database_url
-# from decouple import config
+import dj_database_url
+from decouple import config
 
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default=config('DATABASE_URL')
-#     )
-# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'nefema',
-        'USER': 'postgres',
-        'PASSWORD': 'SEXYpsql!88',
-        'HOST': '127.0.0.1',
-        'DATABASE_PORT': '5432',     
-    }
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'nefema',
+#         'USER': 'postgres',
+#         'PASSWORD': 'SEXYpsql!88',
+#         'HOST': '127.0.0.1',
+#         'DATABASE_PORT': '5432',     
+#     }
+# }
 
 
 
